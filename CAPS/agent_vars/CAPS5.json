@@ -1,0 +1,681 @@
+{
+    "capsinstructions": {
+        "questions": [
+            "-For the next set of questions, I want you to keep the trauma in mind as I ask you about different problems it may have caused you.",
+            "-You may have had some of these problems before, but for this interview we're going to focus just on the past month.",
+            "-For each problem I'll ask if you've had it in the past month, and if so, how often and how much it bothered you."
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritb01trauma1_distress": {
+        "questions": [
+            "In the past month, have you had any unwanted memories of it while you were awake, so not counting dreams?",
+            "-How does it happen that you start remembering it?",
+            "--[unclear] Are these unwanted memories, or are you thinking about it on purpose?",
+            "-How much do these memories bother you?",
+            "-Are you about to put them out of your mind and think about something else?",
+            "--[unclear] Overall, how much of a problem is this for you?",
+            "---How so?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritb01trauma1_num": {
+        "questions": [
+            "-How often have you had these memories in the past month?"
+        ],
+        "prerequisites": "dsm5capscritb01trauma1_distress"
+    },
+    "dsm5capscritb01trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritb01trauma1_distress, dsm5capscritb01trauma1_num"
+    },
+    "dsm5capscritb02trauma1_distress": {
+        "questions": [
+            "In the past month, have you had any unpleasant dreams about it?",
+            "-Describe a typical dream.",
+            "--What happens in the dream?",
+            "---[unclear] Do they wake you up?",
+            "----[yes] What do you experience when you wake up?",
+            "----How long does it take you to get back to sleep?",
+            "-----[reports not returning to sleep] How much sleep do you lose?",
+            "-How much do these dreams bother you?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritb02trauma1_num": {
+        "questions": [
+            "-How often have you had these dreams in the past month?"
+        ],
+        "prerequisites": "dsm5capscritb02trauma1_distress"
+    },
+    "dsm5capscritb02trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritb02trauma1_distress, dsm5capscritb02trauma1_num"
+    },
+    "dsm5capscritb03trauma1_distress": {
+        "questions": [
+            "In the past month, have there been times when you suddenly acted or felt as if it were actually happening again?",
+            "-[unclear] This is different than thinking about it or dreaming about it - now I'm asking about flashbacks, when you feel like you're actually back at the time of the event, actually re-living it.",
+            "-How much does it seem as if it were happening again?",
+            "--Are you confused about where you actually are?",
+            "-What do you do while this is happening?",
+            "--Do other people notice your behavior?",
+            "--What do they say?",
+            "-How long does it last?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritb03trauma1_num": {
+        "questions": [
+            "-How often have you had these flashbacks in the past month?"
+        ],
+        "prerequisites": "dsm5capscritb03trauma1_distress"
+    },
+    "dsm5capscritb03trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritb03trauma1_distress, dsm5capscritb03trauma1_num"
+    },
+    "dsm5capscritb04trauma1_distress": {
+        "questions": [
+            "In the past month, have you gotten emotionally upset when something reminded you of the event?",
+            "-What kinds of reminders make you upset?",
+            "-How much do these reminders bother you?",
+            "-Are you able to calm yourself down when this happens?",
+            "--How long does it take?",
+            "-[unclear] Overall, how much of a problem if this for you?",
+            "--How so?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritb04trauma1_num": {
+        "questions": [
+            "-How often has this happened in the past month?"
+        ],
+        "prerequisites": "dsm5capscritb04trauma1_distress"
+    },
+    "dsm5capscritb04trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritb04trauma1_distress, dsm5capscritb04trauma1_num"
+    },
+    "dsm5capscritb05trauma1_distress": {
+        "questions": [
+            "In the past month, have you had any physical reactions when something reminded you of the event?",
+            "-Can you give me some examples?",
+            "--Does your heart race or your breathing change?",
+            "--What about sweating or feeling really tense or shaky?",
+            "-What kinds of reminders trigger these reactions?",
+            "-How long does it take you to recover?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritb05trauma1_num": {
+        "questions": [
+            "-How often has this happened in the past month?"
+        ],
+        "prerequisites": "dsm5capscritb05trauma1_distress"
+    },
+    "dsm5capscritb05trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritb05trauma1_distress, dsm5capscritb05trauma1_num"
+    },
+    "dsm5capscritc01trauma1_distress": {
+        "questions": [
+            "In the past month, have you tried to avoid thoughts or feelings about the event?",
+            "-What kinds of thoughts or feelings do you avoid?",
+            "--How hard do you try to avoid these thoughts or feelings?",
+            "--What kinds of things do you do?",
+            "--[unclear] Overall, how much of a problem is this for you?",
+            "---How would things be different if you didn't have to avoid these thoughts or feelings?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritc01trauma1_num": {
+        "questions": [
+            "-How often in the past month?"
+        ],
+        "prerequisites": "dsm5capscritc01trauma1_distress"
+    },
+    "dsm5capscritc01trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritc01trauma1_distress, dsm5capscritc01trauma1_num"
+    },
+    "dsm5capscritc02trauma1_distress": {
+        "questions": [
+            "In the past month, have you tried to avoid things that remind you of the event, like certain people, places, or situations?",
+            "-What kind of things do you avoid?",
+            "-How much effort do you make to avoid these reminders?",
+            "--Do you have to make a plan or change your activities to avoid them?",
+            "---[unclear] Overall, how much of a problems is this for you?",
+            "---How would things be different if you didn't have to avoid these reminders?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritc02trauma1_num": {
+        "questions": [
+            "-How often in the past month?"
+        ],
+        "prerequisites": "dsm5capscritc02trauma1_distress"
+    },
+    "dsm5capscritc02trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritc02trauma1_distress, dsm5capscritc02trauma1_num"
+    },
+    "dsm5capscritd01trauma1_distress": {
+        "questions": [
+            "In the past month, have you had difficulty remembering some important parts of the event?",
+            "--Do you feel there are gaps in your memory of the event?",
+            "-What parts have you had difficulty remembering?",
+            "-Do you feel you should be able to remember these things?",
+            "--[unclear] Why do you think you cannot?",
+            "---Did you have a head injury during the event?",
+            "---Were you knocked unconscious?",
+            "---Were you intoxicated from alcohol or drugs?",
+            "---[unclear] Is this just normal forgetting? Or do you think you may have blocked it out because it would be too painful to remember?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritd01trauma1_num": {
+        "questions": [
+            "-In the past month, how many of the important parts of the event have you had difficulty remembering?",
+            "--What parts do you still remember?",
+            "--Would you be able to recall these things if you tried?"
+        ],
+        "prerequisites": "dsm5capscritd01trauma1_distress"
+    },
+    "dsm5capscritd01trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritd01trauma1_distress, dsm5capscritd01trauma1_num"
+    },
+    "dsm5capscritd02trauma1_distress": {
+        "questions": [
+            "In the past month, have you had strong negative beliefs about yourself, other people, or the world?",
+            "-Can you give me some examples?",
+            "-How strong are these beliefs?",
+            "--How convinced are you that these beliefs are actually true?",
+            "---Can you see other ways of thinking about it?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritd02trauma1_num": {
+        "questions": [
+            "-How much of the time in the past month have you felt that way, as a percentage?"
+        ],
+        "prerequisites": "dsm5capscritd02trauma1_distress"
+    },
+    "caps5trauma1related_d02": {
+        "questions": [
+            "-Did these beliefs start or get worse after the event?",
+            "--Do you think they're related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscritd02trauma1_distress"
+    },
+    "dsm5capscritd02trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritd02trauma1_distress, dsm5capscritd02trauma1_num"
+    },
+    "dsm5capscritd03trauma1_distress": {
+        "questions": [
+            "In the past month, have you blamed yourself for the event or what happened as a result of it?",
+            "-In what sense do you see yourself as having caused the event?",
+            "-Is it because of something you did? Or something you think you should have done but didn't?",
+            "-Is it because of something about you in general?",
+            "What about blaming someone else for the event or what happened as a result of it?",
+            "-In what sense do you see the person as having caused the event?",
+            "--Is it because of something they did?",
+            "--Or something you think they should have done but didn't?",
+            "-How much do you blame yourself or the person?",
+            "-How convinced are you that you or the person are truly responsible for what happened?",
+            "--Do other people agree with you?",
+            "--Can you see other ways of thinking about it?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritd03trauma1_num": {
+        "questions": [
+            "-How much of the time in the past month have you felt that way, as a percentage?"
+        ],
+        "prerequisites": "dsm5capscritd03trauma1_distress"
+    },
+    "dsm5capscritd03trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritd03trauma1_distress, dsm5capscritd03trauma1_num"
+    },
+    "dsm5capscritd04trauma1_distress": {
+        "questions": [
+            "In the past month, have you had any strong negative feelings such as fear, horror, anger, guilt, or shame?",
+            "-Can you give me some examples?",
+            "--What negative feelings do you experience?",
+            "-How strong are these negative feelings?",
+            "-How well are you able to manage them?",
+            "--[unclear] Overall, how much of a problem is this for you?",
+            "---How so?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritd04trauma1_num": {
+        "questions": [
+            "-How much of the time in the past month have you felt that way, as a percentage?"
+        ],
+        "prerequisites": "dsm5capscritd04trauma1_distress"
+    },
+    "caps5trauma1related_d04": {
+        "questions": [
+            "-Did these negative feelings start or get worse after the event?",
+            "--Do you think they're related to the event?",
+            "--How so?"
+        ],
+        "prerequisites": "dsm5capscritd04trauma1_distress"
+    },
+    "dsm5capscritd04trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritd04trauma1_distress, dsm5capscritd04trauma1_num"
+    },
+    "dsm5capscritd05trauma1_distress": {
+        "questions": [
+            "In the past month, have you been less interested in activities that you used to enjoy?",
+            "-What kinds of things have you lost interest in or don't do as much as you used to?",
+            "--Anything else?",
+            "--Why is that? ",
+            "-How strong is your loss of interest?",
+            "--Would you still enjoy the activity once you got started?",
+            "-What kinds of things do you still enjoy doing?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritd05trauma1_num": {
+        "questions": [
+            "-Overall, in the past month, how many of your usual activities have you been less interested in, as a percentage?"
+        ],
+        "prerequisites": "dsm5capscritd05trauma1_distress"
+    },
+    "caps5trauma1related_d05": {
+        "questions": [
+            "-Did this loss of interest start or get worse after the event?",
+            "--Do you think they're related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscritd05trauma1_distress"
+    },
+    "dsm5capscritd05trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritd05trauma1_distress, dsm5capscritd05trauma1_num"
+    },
+    "dsm5capscritd06trauma1_distress": {
+        "questions": [
+            "In the past month, have you felt distant or cut off from other people? ",
+            "-Tell me more about that.",
+            "-How strong are your feelings of being distant or cut off from others?",
+            "--Who do you feel closest to?",
+            "--How many people do you feel comfortable talking with about personal things?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritd06trauma1_num": {
+        "questions": [
+            "-How much of the time in the past month have you felt that way, as a percentage?"
+        ],
+        "prerequisites": "dsm5capscritd06trauma1_distress"
+    },
+    "caps5trauma1related_d06": {
+        "questions": [
+            "-Did this feeling of detachment start or get worse after the event?",
+            "--Do you think they're related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscritd06trauma1_distress"
+    },
+    "dsm5capscritd06trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritd06trauma1_distress, dsm5capscritd06trauma1_num"
+    },
+    "dsm5capscritd07trauma1_distress": {
+        "questions": [
+            "In the past month, have there been times when you had difficulty experiencing positive feelings like love or happiness?",
+            "-Tell me more about that.",
+            "--What feelings are difficult to experience?",
+            "-How much difficulty do you have experiencing positive feelings?",
+            "--Are you still able to experience any positive feelings?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritd07trauma1_num": {
+        "questions": [
+            "-How much of the time in the past month have you felt that way, as a percentage?"
+        ],
+        "prerequisites": "dsm5capscritd07trauma1_distress"
+    },
+    "caps5trauma1related_d07": {
+        "questions": [
+            "-Did this trouble experiencing positive feelings start or get worse after the event?",
+            "--Do you think they're related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscritd07trauma1_distress"
+    },
+    "dsm5capscritd07trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscritd07trauma1_distress, dsm5capscritd07trauma1_num"
+    },
+    "dsm5capscrite01trauma1_distress": {
+        "questions": [
+            "In the past month, have there been times when you felt especially irritable or angry and showed it in your behavior?",
+            "-Can you give me some examples?",
+            "--How do you show it?",
+            "--Do you raise your voice or yell?",
+            "--Throw or hit things?",
+            "--Push or hit other people?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscrite01trauma1_num": {
+        "questions": [
+            "-How often in the past month?"
+        ],
+        "prerequisites": "dsm5capscrite01trauma1_distress"
+    },
+    "caps5trauma1related_e01": {
+        "questions": [
+            "-Did this behavior start or get worse after the event?",
+            "--Do you think it's related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscrite01trauma1_distress"
+    },
+    "dsm5capscrite01trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscrite01trauma1_distress, dsm5capscrite01trauma1_num"
+    },
+    "dsm5capscrite02trauma1_distress": {
+        "questions": [
+            "In the past month, have there been times when you were taking more risks or doing things that might have caused you harm?",
+            "-Can you give me some examples?",
+            "-How much of a risk do you take?",
+            "--How dangerous are these behaviors?",
+            "--Were you injured or harmed in some way?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscrite02trauma1_num": {
+        "questions": [
+            "-How often have you taken these kinds of risks in the past month?"
+        ],
+        "prerequisites": "dsm5capscrite02trauma1_distress"
+    },
+    "caps5trauma1related_e02": {
+        "questions": [
+            "-Did this behavior start or get worse after the event?",
+            "--Do you think it's related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscrite02trauma1_distress"
+    },
+    "dsm5capscrite02trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscrite02trauma1_distress, dsm5capscrite02trauma1_num"
+    },
+    "dsm5capscrite03trauma1_distress": {
+        "questions": [
+            "In the past month, have you been especially alert or watchful, even when there was no specific threat or danger?",
+            "-Have you felt as if you had to be on guard?",
+            "-Can you give me some examples?",
+            "--What kinds of things do you do when you're alert or watchful?",
+            "--[unclear] What causes you to react this way?",
+            "---Do you feel like you're in danger or threatened in some way?",
+            "---Do you feel that way more than most people would in the same situation?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscrite03trauma1_num": {
+        "questions": [
+            "-How much of the time in the past month have you felt that way, as a percentage?"
+        ],
+        "prerequisites": "dsm5capscrite03trauma1_distress"
+    },
+    "caps5trauma1related_e03": {
+        "questions": [
+            "-Did being especially alert or watchful start or get worse after the event?",
+            "--Do you think it's related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscrite03trauma1_distress"
+    },
+    "dsm5capscrite03trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscrite03trauma1_distress, dsm5capscrite03trauma1_num"
+    },
+    "dsm5capscrite04trauma1_distress": {
+        "questions": [
+            "In the past month, have you had any strong startle reactions?",
+            "-What kinds of things made you startle?",
+            "-How strong are these startle reactions?",
+            "--How strong are they compared to how most people would respond?",
+            "--Do you do anything other people would notice?",
+            "-How long does it take you to recover?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscrite04trauma1_num": {
+        "questions": [
+            "-How often has this happened in the past month?"
+        ],
+        "prerequisites": "dsm5capscrite04trauma1_distress"
+    },
+    "caps5trauma1related_e04": {
+        "questions": [
+            "-Did these startle reactions start or get worse after the event?",
+            "--Do you think they're related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscrite04trauma1_distress"
+    },
+    "dsm5capscrite04trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscrite04trauma1_distress, dsm5capscrite04trauma1_num"
+    },
+    "dsm5capscrite05trauma1_distress": {
+        "questions": [
+            "In the past month, have you had any problems with concentration?",
+            "-Can you give me some examples?",
+            "-Are you able to concentrate if you really try?",
+            "--[unclear] Overall, how much of a problem is this for you?",
+            "---How would things be different if you didn't have problems with concentration?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscrite05trauma1_num": {
+        "questions": [
+            "-How often in the past month have you had trouble concentrating, as a percentage?"
+        ],
+        "prerequisites": "dsm5capscrite05trauma1_distress"
+    },
+    "caps5trauma1related_e05": {
+        "questions": [
+            "-Did these problems with concentration start or get worse after the event?",
+            "--Do you think they're related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscrite05trauma1_distress"
+    },
+    "dsm5capscrite05trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscrite05trauma1_distress, dsm5capscrite05trauma1_num"
+    },
+    "dsm5capscrite06trauma1_distress": {
+        "questions": [
+            "In the past month, have you had any problems falling or staying asleep?",
+            "-What kinds of problems?",
+            "--How long does it take you to fall asleep?",
+            "--How often do you wake up in the night?",
+            "--Do you wake up earlier than you want to?",
+            "-How many total hours do you sleep each night?",
+            "-How many hours do you think you should be sleeping?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscrite06trauma1_num": {
+        "questions": [
+            "-How often in the past month have you had these sleep problems?"
+        ],
+        "prerequisites": "dsm5capscrite06trauma1_distress"
+    },
+    "caps5trauma1related_e06": {
+        "questions": [
+            "-Did these sleep problems start or get worse after the event?",
+            "--Do you think they're related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5capscrite06trauma1_distress"
+    },
+    "dsm5capscrite06trauma1": {
+        "questions": [],
+        "prerequisites": "dsm5capscrite06trauma1_distress, dsm5capscrite06trauma1_num"
+    },
+    "dsmiv_future_frequency_current": {
+        "questions": [
+            "Have there been times when you felt there is no need to plan for the future, that somehow your future will be cut short?",
+            "-Why is that?",
+            "-How much of the time in the past month have you felt that way?",
+            "-When did you first start to that way? After the event?"
+        ],
+        "prerequisites": ""
+    },
+    "dsmiv_future_intens_current": {
+        "questions": [
+            "-How strong was this feeling that your future will be cut short?",
+            "--How long do you think you will live?",
+            "-How convinced are you that you will die prematurely?"
+        ],
+        "prerequisites": "dsmiv_future_frequency_current"
+    },
+    "dsmcaps_critf_admin": {
+        "questions": [],
+        "prerequisites": "IA"
+    },
+    "dsmcaps_critf_cur1_nummonths": {
+        "questions": [
+            "-[unclear] When did you first start having the symptom you have told me about?",
+            "--How long after the trauma did they start?",
+            "--More than six months?"
+        ],
+        "prerequisites": "dsmcaps_critf_admin"
+    },
+    "dsm5caps_critf_cur1_yesno": {
+        "questions": [],
+        "prerequisites": "dsmcaps_critf_admin, dsmcaps_critf_cur1_nummonths, calculation"
+    },
+    "dsm5caps_critf_cur1_b": {
+        "questions": [],
+        "prerequisites": "dsmcaps_critf_admin, dsmcaps_critf_cur1_nummonths, calculation"
+    },
+    "dsm5caps_critf_cur1_c": {
+        "questions": [],
+        "prerequisites": "dsmcaps_critf_admin, dsmcaps_critf_cur1_nummonths, calculation"
+    },
+    "dsm5capscritfmet": {
+        "questions": [],
+        "prerequisites": "dsmcaps_critf_admin, dsmcaps_critf_cur1_nummonths, calculation"
+    },
+    "dsm5capscritg_trauma1_distress": {
+        "questions": [
+            "Overall, in the past month, how much have you been bothered by these symptoms you've told me about?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritg_trauma1_impair": {
+        "questions": [
+            "In the past month, have these symptoms affected your relationships with other people?",
+            "-How so?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5capscritg_trauma1_fx": {
+        "questions": [
+            "[unclear] Are you working now?",
+            "-[yes] In the past month, have these symptoms affected your work or ability to work?",
+            "--How so?",
+            "-[no] Have these symptoms affected any other important part of your life?",
+            "--How so?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5depersonalization_sev": {
+        "questions": [
+            "In the past month, have there been times when you felt as if you were separated from yourself, like you were watching yourself from the outside or observing your thoughts and feelings as if you were another person?",
+            "-[no] What about feeling as if you were in a dream, even though you were awake?",
+            "--Feeling as if something about you wasn't real?",
+            "--Feeling as if time was moving more slowly?",
+            "--Tell me more about that.",
+            "-How strong is this feeling?",
+            "--Do you lose track of where you actually are or what's actually going on?",
+            "-What do you do while this is happening?",
+            "--Do other people notice your behavior?",
+            "--What do they say?",
+            "-How long does it last?",
+            "-[unclear] Was this due to the effects of alcohol or drugs?",
+            "--What about a medical condition like seizures?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5depersonalization_num": {
+        "questions": [
+            "-How often has this happened in the past month?"
+        ],
+        "prerequisites": "dsm5depersonalization_sev"
+    },
+    "caps5trauma1related_diss01": {
+        "questions": [
+            "-Did this feeling start or get worse after the event?",
+            "--Do you think it's related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5depersonalization_sev"
+    },
+    "dsm5depersonalization": {
+        "questions": [],
+        "prerequisites": "dsm5depersonalization_sev, dsm5depersonalization_num"
+    },
+    "dsm5derealization_sev": {
+        "questions": [
+            "In the past month, have there been times when things going on around you seemed unreal or very strange and unfamiliar?",
+            "-[no] Do things going on around you seem like a dream or like a scene from a movie?",
+            "--Do they seem distant or distorted?",
+            "--Tell me more about that.",
+            "-How strong is this feeling?",
+            "--Do you lose track of where you actually are or what's actually going on?",
+            "-What do you do while this is happening?",
+            "--Do other people notice your behavior?",
+            "--What do they say?",
+            "-How long does it last?",
+            "-[unclear] Was this due to the effects of alcohol or drugs?",
+            "--What about a medical condition like seizures?"
+        ],
+        "prerequisites": ""
+    },
+    "dsm5derealization_num": {
+        "questions": [
+            "-How often has this happened in the past month?"
+        ],
+        "prerequisites": "dsm5derealization_sev"
+    },
+    "caps5trauma1related_diss02": {
+        "questions": [
+            "-Did this feeling start or get worse after the event?",
+            "--Do you think it's related to the event?",
+            "---How so?"
+        ],
+        "prerequisites": "dsm5derealization_sev"
+    },
+    "dsm5derealization": {
+        "questions": [],
+        "prerequisites": "dsm5derealization_sev, dsm5derealization_num"
+    },
+    "dsm5capsglobalvalidtrauma1": {
+        "questions": "",
+        "prerequisites": "IA"
+    },
+    "dsm5capsglobalsevtrauma1": {
+        "questions": "",
+        "prerequisites": "IA"
+    }
+}

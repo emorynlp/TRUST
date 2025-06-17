@@ -1,0 +1,1420 @@
+{
+    "dsm5capscritb01trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal distress or disruption of activities",
+            "2": "Clearly Present, distress clearly presented but still manageable, some disruption of activities",
+            "3": "Pronounced, considerable distress, difficulty dismissing memories, marked disruption of activities",
+            "4": "Extreme, incapacitating distress, cannot dismiss memories, unable to continue activities"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had unwanted memories of the traumatic event while awake",
+        "type": "scale",
+        "attributes": [
+            {
+                "condition": "the symptom only exists in dreams",
+                "score": "0"
+            },
+            {
+                "condition": "the symptom is not perceived as involuntary and intrusive",
+                "score": "0"
+            }
+        ],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb01trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "had unwanted memories of the traumatic event while awake",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb01trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritb02trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal distress, may not have awoken",
+            "2": "Clearly Present, awoke in distress but readily returned to sleep",
+            "3": "Pronounced, considerable distress, difficulty returning to sleep",
+            "4": "Extreme, incapacitating distress, did not return to sleep"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had unpleasant dreams about the traumatic event",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb02trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "had unpleasant dreams about the traumatic event",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb02trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritb03trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No reliving",
+            "1": "Minimal, somewhat more realistic than just thinking about event",
+            "2": "Clearly Present, definite but transient dissociative quality, still very aware of surroundings, daydreaming quality",
+            "3": "Pronounced, strongly dissociative (reports images, sounds, or smells) but retained some awareness of surroundings",
+            "4": "Extreme, complete dissociation (flashback), no awareness of surroundings, may be unresponsive, possible amnesia for the episode (blackout)"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "suddenly acted or felt as if the traumatic event were actually happening again",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb03trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "had these types of flashbacks",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb03trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritb04trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal distress or disruption of activities",
+            "2": "Clearly Present, distress clearly present but still manageable, some disruption of activities",
+            "3": "Pronounced, considerable distress, marked disruption of activities",
+            "4": "Extreme, incapacitating distress, unable to continue activities"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has gotten emotionally upset when something reminded them of the traumatic event",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb04trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "has gotten emotionally upset when something reminded them of the traumatic event",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb04trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritb05trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No physical reactivity",
+            "1": "Minimal, minimal reactivity",
+            "2": "Clearly Present, physical reactivity clearly present, may be sustained if exposure continues",
+            "3": "Pronounced, marked physical reactivity, sustained throughout exposure",
+            "4": "Extreme, dramatic physical reactivity, sustained arousal even after exposure has ended"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had physical reactions when something reminded them of the traumatic event",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb05trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "had physical reactions when something reminded them of the traumatic event",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritb05trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritc01trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal effort, little or no disruption of activities",
+            "2": "Clearly Present, some effort, avoidance definitely present, some disruption of activities",
+            "3": "Pronounced, considerable effort, marked avoidance, marked disruption of activities, or involvement in certain activities as avoidant strategy",
+            "4": "Extreme, drastic attempts at avoidance, unable to continue activities, or excessive involvement in certain activities as avoidant strategy"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has tried to avoid thoughts or feelings about the traumatic event",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritc01trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "has tried to avoid thoughts or feelings about the traumatic event",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritc01trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritc02trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal effort, little or no disruption of activities",
+            "2": "Clearly Present, some effort, avoidance definitely present, some disruption of activities",
+            "3": "Pronounced, considerable effort, marked avoidance, marked disruption of activities or involvement in certain activities as avoidant strategy",
+            "4": "Extreme, drastic attempts at avoidance, unable to continue activities, or excessive involvement in certain activities as avoidant strategy"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has tried to avoid things that remind them of the traumatic event, such as certain people, places, or situations",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritc02trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "has tried to avoid things that remind them of the traumatic event, such as certain people, places, or situations",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritc02trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritd01trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal difficulty",
+            "2": "Clearly Present, some difficulty, could recall with effort",
+            "3": "Pronounced, considerable difficulty, even with effort",
+            "4": "Extreme, completely unable to recall important aspects of event"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had difficulty remembering some important parts of the traumatic event",
+        "type": "scale",
+        "attributes": [
+            {
+                "condition": "the symptom is due to head injury, loss of consciousness, or intoxication",
+                "score": "0"
+            },
+            {
+                "condition": "the symptom is only due to normal forgetting",
+                "score": "0"
+            }
+        ],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd01trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "in the past month, how many important parts of the traumatic event",
+        "symptom": "had difficulty remembering",
+        "type": "a number representing important parts that the patient has difficulty remembering in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd01trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "parts",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritd02trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal negative beliefs",
+            "2": "Clearly Present, definite but realistic negative beliefs",
+            "3": "Pronounced, considerable negative beliefs",
+            "4": "Extreme, significant difficulty considering more realistic beliefs, stuck that the belief is real even despite contradictory evidence"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had strong negative beliefs about themselves, other people, or the world",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd02trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how much of the time in the past month as a percentage",
+        "symptom": "has felt strong negative beliefs about themselves, other people, or the world",
+        "type": "a number representing the percentage of the time in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_d02": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "has felt strong negative beliefs about themselves, other people, or the world",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd02trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "percentage",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritd03trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal self/other blame",
+            "2": "Clearly Present, exaggerated blame on self/other, some difficulty considering realistic beliefs about blame",
+            "3": "Pronounced, considerable blame on self/other, considerable difficulty considering more realistic beliefs about blame",
+            "4": "Extreme, complete blame on self/other, unable to consider more realistic beliefs about blame at all"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has blamed themself for the traumatic event or what happened as a result of the traumatic event",
+        "type": "scale",
+        "attributes": [
+            {
+                "condition": "the patient only blames the perpetrator, i.e., someone who deliberately caused the event and intended harm",
+                "score": "0"
+            }
+        ],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd03trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how much of the time in the past month as a percentage",
+        "symptom": "has blamed themself for the traumatic event or what happened as a result of the traumatic event",
+        "type": "a number representing the percentage of the time in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd03trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "percentage",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritd04trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal difficulty with negative feelings, ",
+            "2": "Clearly Present, definite negative feelings, some difficulty managing",
+            "3": "Pronounced, marked negative feelings, considerable difficulty managing",
+            "4": "Extreme, extreme negative feelings, serious difficulty managing, profound effect on functioning"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had strong negative feelings such as fear, horror, anger, guilt, or shame",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd04trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how much of the time in the past month as a percentage",
+        "symptom": "had strong negative feelings such as fear, horror, anger, guilt, or shame",
+        "type": "a number representing the percentage of the time in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_d04": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "had strong negative feelings such as fear, horror, anger, guilt, or shame",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd04trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "percentage",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritd05trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No loss of interest",
+            "1": "Minimal, slight loss of interest, probably would enjoy after starting activities",
+            "2": "Clearly Present, definite loss of interest, but still has some enjoyment of activities",
+            "3": "Pronounced, marked loss of interest in activities",
+            "4": "Extreme, complete loss of interest, no longer participates in any activities"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has been less interested in activities that they used to enjoy",
+        "type": "scale",
+        "attributes": [
+            {
+                "condition": "the patient's diminished participation is due to lack of opportunity, physical inability, or developmentally appropriate change in preferred activities",
+                "score": "0"
+            }
+        ],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd05trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many, as a percentage, in the past month",
+        "symptom": "has been less interested in activities that they used to enjoy",
+        "type": "a number representing the percentage of interest loss in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_d05": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "has been less interested in activities that they used to enjoy",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd05trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "percentage",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritd06trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No feelings of detachment or estrangement",
+            "1": "Minimal, may feel \"out of synch\" with others",
+            "2": "Clearly Present, feelings of detachment clearly present, but still feels some interpersonal connection",
+            "3": "Pronounced, marked feelings of detachment or estrangement from most people, may feel close to only one or two people",
+            "4": "Extreme, feels completely detached or estranged from others, not close with anyone"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has felt distant or cut off from other people",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd06trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how much of the time in the past month as a percentage",
+        "symptom": "has felt distant or cut off from other people",
+        "type": "a number representing the percentage of the time in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_d06": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "has felt distant or cut off from other people",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd06trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "percentage",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscritd07trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No reduction of emotional experience",
+            "1": "Minimal, slight reduction of emotional experience",
+            "2": "Clearly Present, definite reduction of emotional experience, but still able to experience most emotions",
+            "3": "Pronounced, marked reduction of experience of at least two primary emotions (e.g., love, happiness)",
+            "4": "Extreme, completely lacking emotional experience"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has felt like they had difficulty experiencing positive feelings such as love or happiness",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd07trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how much of the time in the past month as a percentage",
+        "symptom": "has felt like they had difficulty experiencing positive feelings such as love or happiness",
+        "type": "a number representing the percentage of the time in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_d07": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "has felt like they had difficulty experiencing positive feelings such as love or happiness",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritd07trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "percentage",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscrite01trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No irritability or anger",
+            "1": "Minimal, minimal irritability, may raise voice when angry",
+            "2": "Clearly Present, definite irritability or attempts to suppress anger, but can recover quickly",
+            "3": "Pronounced, marked irritability or marked attempts to suppress anger, may become verbally or physically aggressive when angry",
+            "4": "Extreme, pervasive anger or drastic attempts to suppress anger, may have episodes of physical violence"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has felt especially irritable or angry and showed it in their behavior",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite01trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "has felt especially irritable or angry and showed it in their behavior",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_e01": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "has felt especially irritable or angry and showed it in their behavior",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite01trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscrite02trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Minimal, minimal risk",
+            "2": "Clearly Present, definite risk, may have been harmed",
+            "3": "Pronounced, marked risk, has caused actual harm or high probability of harm",
+            "4": "Extreme, extreme risk with significant harm or probability of harm present"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has taken more risks or done things that might have caused them harm",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite02trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "has taken more risks or done things that might have caused them harm",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_e02": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "has taken more risks or done things that might have caused them harm",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite02trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscrite03trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No hypervigilance",
+            "1": "Minimal, minimal hypervigilance, slight heightening of awareness",
+            "2": "Clearly Present, hypervigilance clearly present, watchful in public (e.g., chooses safe place to sit in a restaurant or movie theater)",
+            "3": "Pronounced, marked hypervigilance, very alert, scans environment for danger, exaggerated concern for safety of self/family/home",
+            "4": "Extreme, excessive hypervigilance, efforts to ensure safety consume significant time and energy and may involve extensive safety/checking behaviors, marked watchfulness during interview"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "has been especially alert or watchful, even when there was no specific threat or danger",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite03trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how much of the time in the past month as a percentage",
+        "symptom": "has been especially alert or watchful, even when there was no specific threat or danger",
+        "type": "a number representing the percentage of the time in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_e03": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "has been especially alert or watchful, even when there was no specific threat or danger",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite03trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "percentage",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscrite04trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No startle reaction",
+            "1": "Minimal, minimal startle reaction",
+            "2": "Clearly Present, definite startle reaction, feels \"jumpy\"",
+            "3": "Pronounced, marked startle reaction, sustained arousal following initial reaction",
+            "4": "Extreme, excessive startle reaction, overt coping behavior (e.g., combat veteran who \"hits the dirt\")"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had strong startle reactions",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite04trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "had strong startle reactions",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_e04": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "had strong startle reactions",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite04trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscrite05trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No difficulty with concentration",
+            "1": "Minimal, only slight effort needed to concentrate, little or no disruption of activities",
+            "2": "Clearly Present, definite loss of concentration but could concentrate with effort, some disruption of activities",
+            "3": "Pronounced, marked loss of concentration even with effort, marked disruption of activities",
+            "4": "Extreme, complete inability to concentrate, unable to engage in activities"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had problems with concentration",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite05trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how much of the time in the past month as a percentage",
+        "symptom": "had problems with concentration",
+        "type": "a number representing the percentage of the time in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_e05": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "had problems with concentration",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite05trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "percentage",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capscrite06trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "No sleep problems",
+            "1": "Minimal, slightly longer latency, or minimal difficulty staying asleep (up to 30 minutes loss of sleep)",
+            "2": "Clearly Present, definite sleep disturbance, clearly longer latency, or clear difficulty staying asleep (30-90 minutes loss of sleep)",
+            "3": "Pronounced, much longer latency, or marked difficulty staying asleep (90 min to 3 hrs loss of sleep)",
+            "4": "Extreme, very long latency, or profound difficulty staying asleep (> 3 hrs loss of sleep)"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had problems falling or staying asleep",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite06trauma1_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "had problems falling or staying asleep",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_e06": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "had problems falling or staying asleep",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscrite06trauma1": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsmiv_future_frequency_current": {
+        "field_type": "scale",
+        "range": {
+            "0": "None of the time",
+            "1": "Very little of the time (less than 10%)",
+            "2": "Some of the time (20-30%)",
+            "3": "Much of the time (50-60%)",
+            "4": "Most of the time or all the time (>80%)"
+        },
+        "keywords": "how much of the time in the past month as a percentage",
+        "symptom": "has felt there is no need to plan for the future, that somehow their future will be cut short?",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsmiv_future_intens_current": {
+        "field_type": "scale",
+        "range": {
+            "0": "No sense of foreshortened future",
+            "1": "Mild, minimal effort, little or no disruptions",
+            "2": "Moderate, sense of foreshortened future definitely present, but no specific prediction about longevity",
+            "3": "Severe, marked sense of a foreshortened future, may make specific prediction about longevity",
+            "4": "Extreme, overwhelming sense of foreshortened future, completed convinced of premature death"
+        },
+        "keywords": "how severe in the past month",
+        "symptom": "has felt there is no need to plan for the future, that somehow their future will be cut short?",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsmcaps_critf_admin": {
+        "field_type": "IA",
+        "range": {
+            "0": "No",
+            "1": "Yes"
+        },
+        "keywords": "",
+        "type": "",
+        "template": ""
+    },
+    "dsmcaps_critf_cur1_nummonths": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": " the total number of months of delay in PTSD symptom onset from the traumatic event",
+        "symptom": "first started having the PTSD symptoms they previously discussed",
+        "type": "an integer representing the total number of months",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5caps_critf_cur1_yesno": {
+        "field_type": "category",
+        "range": {
+            "0": "No",
+            "1": "Yes"
+        },
+        "keywords": "whether or not (No / Yes)",
+        "symptom": "has delayed onset of PTSD symptoms greater than 6 months",
+        "type": "categories",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5caps_critf_cur1_b": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "the total duration in months",
+        "symptom": "has experienced PTSD symptoms",
+        "type": "an integer representing the total number of months",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5caps_critf_cur1_c": {
+        "field_type": "category",
+        "range": {
+            "0": "ACUTE (less than or equal to 3 months)",
+            "1": "CHRONIC (>3 months)}"
+        },
+        "keywords": "whether it is an acute or chronic duration",
+        "symptom": "has experienced PTSD symptoms",
+        "type": "categories",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritfmet": {
+        "field_type": "category",
+        "range": {
+            "0": "No",
+            "1": "Yes"
+        },
+        "keywords": "whether or not (No / Yes)",
+        "symptom": "has experienced PTSD Symptoms for more than 1 month?",
+        "type": "categories",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritg_trauma1_distress": {
+        "field_type": "scale",
+        "range": {
+            "0": "None",
+            "1": "Mild, minimal distress",
+            "2": "Moderate distress, clearly present but manageable",
+            "3": "Severe, considerable distress",
+            "4": "Extreme, incapacitating distress"
+        },
+        "keywords": "how severe in the past month",
+        "symptom": "has been bothered by the previously mentioned PTSD symptoms overall",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritg_trauma1_impair": {
+        "field_type": "scale",
+        "range": {
+            "0": "No Adverse Impact",
+            "1": "Mild, minimal impact in social functioning.",
+            "2": "Moderate impact. Definite impairment, but social functioning intact",
+            "3": "Severe, impact, marked impairment, few aspects of social functioning intact",
+            "4": "Extreme, impact, little or no social functioning"
+        },
+        "keywords": "how severe in the past month",
+        "symptom": "relationships with other people are affected by the previously mentioned PTSD symptoms",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient's {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5capscritg_trauma1_fx": {
+        "field_type": "scale",
+        "range": {
+            "0": "No Adverse Impact",
+            "1": "Mild, minimal impact in occupational functioning.",
+            "2": "Moderate impact. Definite impairment, but occupational functioning intact",
+            "3": "Severe, impact, marked impairment, few aspects of occupational functioning intact",
+            "4": "Extreme, impact, little or no occupational functioning"
+        },
+        "keywords": "how severe in the past month",
+        "symptom": "work or ability to work are affected by the previously mentioned PTSD symptoms",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient's {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5depersonalization_sev": {
+        "field_type": "scale",
+        "range": {
+            "0": "No depersonalization",
+            "1": "Minimal, slight depersonalization",
+            "2": "Clearly Present, definite but transient depersonalization",
+            "3": "Pronounced, considerable depersonalization, marked sense of detachment from self, may persist for several hours",
+            "4": "Extreme,  profound depersonalization, dramatic sense of detachment from self"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had times when they felt as if they were separated from themself, like they were watching themself from the outside or observing their thoughts and feelings as if they were another person",
+        "type": "scale",
+        "attributes": [
+            {
+                "condition": "the symptom is due to the effects of a substance or another medical condition",
+                "score": "0"
+            }
+        ],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5depersonalization_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "had times when they felt as if they were separated from themself, like they were watching themself from the outside or observing their thoughts and feelings as if they were another person",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_diss01": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "had times when they felt as if they were separated from themself, like they were watching themself from the outside or observing their thoughts and feelings as if they were another person",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5depersonalization": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5derealization_sev": {
+        "field_type": "scale",
+        "range": {
+            "0": "No derealization",
+            "1": "Minimal, slight derealization",
+            "2": "Clearly Present, definite but transient derealization",
+            "3": "Pronounced, considerable derealization, marked confusion about what is real, may persist for several hours",
+            "4": "Extreme, profound derealization, dramatic loss of sense of reality or familiarity"
+        },
+        "keywords": "how intense in the past month",
+        "symptom": "had times when things going on around you seemed unreal or very strange and unfamiliar",
+        "type": "scale",
+        "attributes": [
+            {
+                "condition": "the symptom is due to the effects of a substance or another medical condition",
+                "score": "0"
+            }
+        ],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5derealization_num": {
+        "field_type": "measure",
+        "range": {},
+        "keywords": "how many times in the past month",
+        "symptom": "had times when things going on around you seemed unreal or very strange and unfamiliar",
+        "type": "a number representing the frequency of the symptom in the past month",
+        "attributes": [],
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please calculate {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be {type}. {attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "caps5trauma1related_diss02": {
+        "field_type": "scale",
+        "range": {
+            "0": "Unlikely",
+            "1": "Probable",
+            "2": "Definite"
+        },
+        "keywords": "if it is related to, started, or got worse after the traumatic event",
+        "symptom": "had times when things going on around you seemed unreal or very strange and unfamiliar",
+        "type": "scale",
+        "template": {
+            "system": "Imagine you are a professional clinician. Based on the patient's interview history, please assess {keywords} that the patient {symptom}. Return the assessment as a JSON object with \"reason\" and \"answer\" as the keys. The \"reason\" should provide a brief justification or explanation for the answer. The \"answer\" should be in the range {range}, where each number corresponds to the following {type}:{choices}{attributes}",
+            "user": "{history}",
+            "assistant": "{assistant}"
+        }
+    },
+    "dsm5derealization": {
+        "field_type": "rule",
+        "range": {
+            "0": "Absent",
+            "1": "Mild/subthreshold",
+            "2": "Moderate/threshold",
+            "3": "Severe/markedly elevated",
+            "4": "Extreme/incapacitating"
+        },
+        "keywords": "frequency",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capsglobalvalidtrauma1": {
+        "field_type": "IA",
+        "range": {
+            "0": "Excellent, no reason to suspect invalid responses",
+            "1": "Good, factors present that may adversely affect validity",
+            "2": "Fair, factors that may presently reduce validity",
+            "3": "Poor, substantially reduced validity",
+            "4": "Invalid responses, severely impaired mental status or possible deliberate \"faking bad\" or \"faking good\""
+        },
+        "keywords": "",
+        "symptom": "",
+        "type": "scale",
+        "template": ""
+    },
+    "dsm5capsglobalsevtrauma1": {
+        "field_type": "IA",
+        "range": {
+            "0": "No clinically significant symptoms, no distress and no functional impairment",
+            "1": "Mild, minimal distress or functional impairment",
+            "2": "Moderate, definite distress or functional impairment, limited but functions satisfactorily with effort",
+            "3": "Severe, considerable distress or functional impairment, limited functioning even with effort",
+            "4": "Extreme, marked distress or marked impairment in two or more major areas of functioning"
+        },
+        "keywords": "",
+        "type": "scale",
+        "template": ""
+    }
+}

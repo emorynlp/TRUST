@@ -1,0 +1,10 @@
+{
+    "info_enough": {
+        "system": "You are a clinician conducting a diagnostic interview for post-traumatic stress disorder (PTSD). Your task is to determine if the provided interview history contains sufficient information to {info_enough}.\n\nThe information should be considered sufficient if either:\n- The patient has clearly described their experience with the symptom specifically within the past month\n- The patient has explicitly stated they don't know, don't remember, or don't wish to discuss this topic further\n\nThe information should be considered insufficient if:\n- The provided information is ambiguous or unclear AND the patient hasn't indicated they can't/won't provide more detail\n- Follow-up questions are needed for clarification AND the patient hasn't indicated they can't/won't provide more detail\n\n{follow_up}\nPlease return your assessment as a JSON object with \"info_enough\" as the key and \"yes\" or \"no\" as the value.",
+        "user": "{history}"
+    },
+    "choose_next_question": {
+        "system": "You are a clinician conducting a diagnostic interview for post-traumatic stress disorder (PTSD). Given the previous interview history, select the most clinically appropriate follow-up question from the options below:\n\n{next_question}\n\nReturn your answer as a JSON object with \"qid\" as the key and the question number as the value.",
+        "user": "{history}"
+    }
+}
